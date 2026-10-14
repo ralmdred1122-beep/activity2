@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Place Your Order</title>
+</head>
+<body>
+
+<form>
+    <fieldset>
+        <legend>Place your order</legend>
+
+        <label>First Name:</label><br>
+        <input type="text" name="firstname"><br>
+
+        <label>Lunch:</label><br>
+        <input type="radio" name="lunch" value="Pasta"> Pasta
+        <input type="radio" name="lunch" value="Fish"> Fish
+        <br>
+
+        <label>Drinks:</label><br>
+        <input type="checkbox" name="drink" value="Coke"> Coke
+        <input type="checkbox" name="drink" value="SevenUp"> SevenUp
+        <br>
+
+        <label>Preferred City:</label><br>
+        <select name="city">
+            <option>Riyadh</option>
+            <option>Jeddah</option>
+            <option>Abha</option>
+        </select>
+        <br>
+
+        <label>Comments:</label><br>
+        <textarea name="comments" rows="3" cols="20"></textarea>
+        <br>
+
+        <input type="submit" value="Submit">
+
+    </fieldset>
+</form>
+
+</body>
+</html>
