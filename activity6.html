@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Activity 6 - Student Details</title>
+
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            margin: 25px;
+            background: white;
+        }
+
+        .wrapper {
+            width: 850px;
+            max-width: 100%;
+            margin: auto;
+        }
+
+        fieldset {
+            border: 1px solid gray;
+            margin-bottom: 25px;
+            padding: 12px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        .personal {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .form-fields {
+            flex: 1;
+        }
+
+        .field {
+            margin-bottom: 12px;
+        }
+
+        .flower {
+            width: 190px;
+            height: 140px;
+            object-fit: cover;
+        }
+
+        textarea {
+            width: 220px;
+            height: 65px;
+        }
+
+        button {
+            padding: 5px 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<form>
+
+    <fieldset>
+        <legend>PERSONAL INFORMATION</legend>
+
+        <div class="personal">
+
+            <div class="form-fields">
+
+                <div class="field">
+                    First name:
+                    <input type="text"
+                           placeholder="Enter First name">
+                </div>
+
+                <div class="field">
+                    Last name:
+                    <input type="text"
+                           placeholder="Enter Last name">
+                </div>
+
+                <div class="field">
+                    Gender:
+                    <input type="radio" name="gender"> Male
+                    <input type="radio" name="gender"> Female
+                </div>
+
+                <div class="field">
+                    Birthday:
+                    <input type="date" name="birthday">
+                </div>
+
+                <div class="field">
+                    Country:
+                    <input type="text" name="country">
+                </div>
+
+                <div class="field">
+                    E-mail:
+                    <input type="email" name="email">
+                </div>
+
+                <div class="field">
+                    Select your favorite color:
+                    <input type="color" value="#ff0000">
+                </div>
+
+                <div class="field">
+                    Address:<br>
+                    <textarea name="address"></textarea>
+                </div>
+
+            </div>
+
+            <img class="flower"
+                 src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=450&q=80"
+                 alt="Flowers">
+
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>EDUCATIONAL DETAILS</legend>
+
+        <div class="field">
+            Degree:
+            <select name="degree">
+                <option>Bachelor</option>
+                <option>Master</option>
+                <option>PhD</option>
+            </select>
+        </div>
+
+        <div class="field">
+            Certified Courses, any:<br>
+            <textarea name="courses"></textarea>
+        </div>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>WORK EXPERIENCE</legend>
+
+        <div class="field">
+            Knowledge in:
+            <input type="checkbox" name="html"> HTML
+            <input type="checkbox" name="css"> CSS
+            <input type="checkbox" name="java"> JAVA
+            <input type="checkbox" name="php"> PHP
+        </div>
+
+        <div class="field">
+            Years of Experience:
+            <input type="number" name="experience"
+                   min="0" value="0">
+        </div>
+
+    </fieldset>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
